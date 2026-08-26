@@ -321,6 +321,7 @@ func main() {
 	if os.Getenv("GOGC") == "" {
 		debug.SetGCPercent(50)
 	}
+	debug.SetMemoryLimit(40 * 1024 * 1024 * 1024)
 
 	flag.Parse()
 
